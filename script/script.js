@@ -16,17 +16,14 @@
             //  console.log(e)
             html += `
                 <div class="col-md-4 mb-3">
-                    <div class="card h-100">
+                    <div class="card h-100 bg-secondary text-white" onclick="page(${e.id})">
                         <div class="card-body">
                             <div class="d-flex justify-content-end">
-                                <h6 class= "text-danger">${e.id}</h6>
+                                <h5 class= "text-dark">${e.id}</h5>
                             </div>
                             <h5 class="post-title mb-4">${e.title}</h5>
                             <p class="post-body">${e.body}</p>
                         </div>
-                        <div class="d-flex justify-content-center mb-3">
-                              <button type="submit" class="btn btn-warning id="click" onclick="page(${e.id})"  >Read More</button>
-                            </div>
                     </div>
                 </div>
             `
@@ -78,16 +75,16 @@
 
          html = `
          <div class="col-md-8 mt-5 m-auto">
-            <div class="card mb-8" onclick="page()">
+            <div class="card mb-8 bg-secondary text-white" >
                 <div class="card-body">
                     <div class="d-flex justify-content-end">
-                        <h6 class= "text-danger">${e.id}</h6>
+                        <h6 class= "text-dark">${e.id}</h6>
                     </div>
                     <h5 class="post-title mb-4 d-flex justify-content-center">${e.title} </h5>
                     <p class="post-body text-center">${e.body}</p>
                 </div>
                 <div class="d-flex justify-content-center mb-3">
-                    <a href="index.html"><button type="submit" class="btn btn-warning" >Home page</button></a>
+                    <a href="index.html"><button type="submit" class="btn btn-light btn-outline-dark" >Home page</button></a>
                 </div>
             </div>
         </div>
